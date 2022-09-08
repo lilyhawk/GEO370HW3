@@ -16,12 +16,13 @@
     <h1>Lillian Hawkins GEO370 World Projections Homework</h1>
 
     <h2>In this assignment I learned how to use plugins to create different projections within QGIS.</h2>
-    <p> After downloading the data from Sakai I created a GitHub repository for this assignment, which I then cloned to GitHub Desktop. I have all my folders for this assignment organized within a folder on my external hard drive. I found this keeps my computer running smoothly. To create the maps in QGIS, I started by uploading the Natural Earth Data and activating the Indicatrix Mapper. Then I changed the EPSG by searching for the values provided in the assignment instructions. Once I had applied the projection to my map I changed the colors to ensure clarity. Next I created a new print layout where I formatted the map before exporting it as a png into my maps folder. I labeled all my pngs as their EPSG value. 
+    <p> After downloading the data from Sakai, I created a GitHub repository for this assignment, which I then cloned to GitHub Desktop. I have all my folders for this assignment organized within a folder on my external hard drive. I found this keeps my computer running smoothly. To create the maps in QGIS, I started by uploading the Natural Earth Data and activating the Indicatrix Mapper. Then, I changed the EPSG by searching for the values provided in the assignment instructions. Once I had applied the projection to my map, I changed the colors to ensure clarity. I created a new print layout where I formatted the map before exporting it as a png into my maps folder. I labeled all my pngs as their EPSG value.
 
       </p>
 
     <h2>WGS84 Projection</h2>
     <h3>Some observations</h3>
+    <p>It appears to be stretched along the parallels. Direction is well preserved and it maintains shape at this global scale, to an extent. Distance appears to be distorted.</p>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
@@ -35,6 +36,7 @@
 
     <h2>Pseudo Mercator</h2>
     <h3>some observations</h3>
+    <p> This cylindric projection preserves distance along the equator and seems to keep them pretty conserved for most of the word but there is a noticable distortion along the poles. It's biggest positive is the preservation of direction. One major drawback is that it is not Equidistant or equal area.</p>
     <a href=".//maps/3857.png">
     <img src=".//maps/3857.png" alt="Pseudo Mercator" width='500px'>
   </a>
@@ -48,6 +50,7 @@
 
   <h2>Cylindrical Equal Area</h2>
   <h3>Some observations</h3>
+  <p>Unlike the Mercator projection, this one preserves equal area. Shape seems to be well preserved.</p>
   <a href=".//maps/54034.png">
     <img src=".//maps/54034.png" alt="Cylindrical Equal Area" width='500px'>
   </a>
@@ -80,9 +83,7 @@
     <img src=".//maps/54028.png" alt="Wagner VII" width='500px'>
   </a>
 
-    <h2> Now, you should <u>add the following projections on your own:</u></h2>
-    <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
-    <p></p>
+  
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
 </body>
